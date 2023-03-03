@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4488C7F029AE74AE00FA447A /* deletePlanet.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 4488C7EF29AE74AE00FA447A /* deletePlanet.graphql */; };
+		4488C7F229AE75F800FA447A /* DeletePlanet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4488C7F129AE75F800FA447A /* DeletePlanet.swift */; };
+		4495DF6029A7FD8F0092B737 /* ExpeditionEarthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4495DF5F29A7FD8F0092B737 /* ExpeditionEarthApp.swift */; };
+		4495DF6429A7FD900092B737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4495DF6329A7FD900092B737 /* Assets.xcassets */; };
+		4495DF7529A7FE3E0092B737 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4495DF7429A7FE3E0092B737 /* Planet.swift */; };
+		4495DF7729A7FE450092B737 /* PlanetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4495DF7629A7FE450092B737 /* PlanetRepository.swift */; };
+		4495DF7A29A7FE510092B737 /* GetPlanets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4495DF7929A7FE510092B737 /* GetPlanets.swift */; };
+		4495DF7E29A7FE8A0092B737 /* JourneyDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4495DF7D29A7FE8A0092B737 /* JourneyDetailViewModel.swift */; };
+		4495DF8029A7FE920092B737 /* JourneyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4495DF7F29A7FE920092B737 /* JourneyDetailView.swift */; };
+		4495DF8529A7FEBC0092B737 /* PlanetRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4495DF8429A7FEBC0092B737 /* PlanetRepositoryImpl.swift */; };
+		4495DF8A29A7FED50092B737 /* PlanetDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4495DF8929A7FED50092B737 /* PlanetDataSource.swift */; };
+		4495DF8C29A7FEE00092B737 /* PlanetDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4495DF8B29A7FEE00092B737 /* PlanetDataSourceImpl.swift */; };
+		4495DF8F29A7FEF20092B737 /* PlanetAPIEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4495DF8E29A7FEF20092B737 /* PlanetAPIEntity.swift */; };
+		44A89FF729ADE1190056A169 /* Mohave-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44A89FF529ADE1190056A169 /* Mohave-SemiBold.ttf */; };
+		44A89FF829ADE1190056A169 /* Mohave-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44A89FF629ADE1190056A169 /* Mohave-Medium.ttf */; };
+		44A89FFA29ADE3850056A169 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A89FF929ADE3850056A169 /* Font+Extension.swift */; };
+		44A89FFC29ADECF30056A169 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A89FFB29ADECF30056A169 /* View+Extension.swift */; };
+		44A89FFF29ADF8700056A169 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = 44A89FFE29ADF8700056A169 /* CachedAsyncImage */; };
+		44B9E6C129B10EB800605407 /* PlanetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B9E6C029B10EB800605407 /* PlanetView.swift */; };
+		44B9E6C429B114BD00605407 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 44B9E6C329B114BD00605407 /* Lottie */; };
+		44B9E6C729B114D700605407 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B9E6C629B114D700605407 /* LottieView.swift */; };
+		44B9E6CC29B1157800605407 /* 404-planets.json in Resources */ = {isa = PBXBuildFile; fileRef = 44B9E6CB29B1157800605407 /* 404-planets.json */; };
+		44B9E6CE29B1183700605407 /* loading-planets.json in Resources */ = {isa = PBXBuildFile; fileRef = 44B9E6CD29B1183700605407 /* loading-planets.json */; };
+		44B9E6D129B11A9700605407 /* Refresher in Frameworks */ = {isa = PBXBuildFile; productRef = 44B9E6D029B11A9700605407 /* Refresher */; };
+		44D799EC29AA6A7E00EE9E15 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 44D799EB29AA6A7E00EE9E15 /* Apollo */; };
+		44D799FF29ABCED800EE9E15 /* fragmentPlanet.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 44D799FE29ABCED800EE9E15 /* fragmentPlanet.graphql */; };
+		44D79A0129ABCFA800EE9E15 /* allPlanets.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 44D79A0029ABCFA800EE9E15 /* allPlanets.graphql */; };
+		44D79A0429ABE36300EE9E15 /* ApolloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D79A0329ABE36300EE9E15 /* ApolloClient.swift */; };
+		44D79A0729ABE9E700EE9E15 /* Sequence+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D79A0629ABE9E700EE9E15 /* Sequence+Extension.swift */; };
+		44D79A0929ABFEA700EE9E15 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D79A0829ABFEA700EE9E15 /* Color+Extension.swift */; };
+		44D79A0C29ABFEDF00EE9E15 /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D79A0B29ABFEDF00EE9E15 /* UINavigationController+Extension.swift */; };
+		44D79A0F29ABFF1400EE9E15 /* ScaleButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D79A0E29ABFF1400EE9E15 /* ScaleButtonStyle.swift */; };
+		44D79A1229ABFF9400EE9E15 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D79A1129ABFF9400EE9E15 /* IntroView.swift */; };
+		44EA751429AC017E00C7F9A2 /* ExpeditionEarthAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 44EA751329AC017E00C7F9A2 /* ExpeditionEarthAPI */; };
+		44EA751929AC0A2300C7F9A2 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 44EA751829AC0A2300C7F9A2 /* Swinject */; };
+		44EA751C29AC0C9A00C7F9A2 /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EA751B29AC0C9A00C7F9A2 /* AppModule.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4430C83529B11FBC006D99BB /* ExpeditionEarth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpeditionEarth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4488C7EF29AE74AE00FA447A /* deletePlanet.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = deletePlanet.graphql; sourceTree = "<group>"; };
+		4488C7F129AE75F800FA447A /* DeletePlanet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletePlanet.swift; sourceTree = "<group>"; };
+		4495DF5F29A7FD8F0092B737 /* ExpeditionEarthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpeditionEarthApp.swift; sourceTree = "<group>"; };
+		4495DF6329A7FD900092B737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4495DF7429A7FE3E0092B737 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		4495DF7629A7FE450092B737 /* PlanetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetRepository.swift; sourceTree = "<group>"; };
+		4495DF7929A7FE510092B737 /* GetPlanets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlanets.swift; sourceTree = "<group>"; };
+		4495DF7D29A7FE8A0092B737 /* JourneyDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyDetailViewModel.swift; sourceTree = "<group>"; };
+		4495DF7F29A7FE920092B737 /* JourneyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyDetailView.swift; sourceTree = "<group>"; };
+		4495DF8429A7FEBC0092B737 /* PlanetRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetRepositoryImpl.swift; sourceTree = "<group>"; };
+		4495DF8929A7FED50092B737 /* PlanetDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDataSource.swift; sourceTree = "<group>"; };
+		4495DF8B29A7FEE00092B737 /* PlanetDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDataSourceImpl.swift; sourceTree = "<group>"; };
+		4495DF8E29A7FEF20092B737 /* PlanetAPIEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetAPIEntity.swift; sourceTree = "<group>"; };
+		44A89FF529ADE1190056A169 /* Mohave-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mohave-SemiBold.ttf"; sourceTree = "<group>"; };
+		44A89FF629ADE1190056A169 /* Mohave-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mohave-Medium.ttf"; sourceTree = "<group>"; };
+		44A89FF929ADE3850056A169 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		44A89FFB29ADECF30056A169 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		44B9E6C029B10EB800605407 /* PlanetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetView.swift; sourceTree = "<group>"; };
+		44B9E6C629B114D700605407 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		44B9E6CB29B1157800605407 /* 404-planets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "404-planets.json"; sourceTree = "<group>"; };
+		44B9E6CD29B1183700605407 /* loading-planets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "loading-planets.json"; sourceTree = "<group>"; };
+		44D799EE29AA6AD400EE9E15 /* schema */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = schema; path = generated/schema; sourceTree = "<group>"; };
+		44D799FE29ABCED800EE9E15 /* fragmentPlanet.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = fragmentPlanet.graphql; sourceTree = "<group>"; };
+		44D79A0029ABCFA800EE9E15 /* allPlanets.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = allPlanets.graphql; sourceTree = "<group>"; };
+		44D79A0329ABE36300EE9E15 /* ApolloClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloClient.swift; sourceTree = "<group>"; };
+		44D79A0629ABE9E700EE9E15 /* Sequence+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Extension.swift"; sourceTree = "<group>"; };
+		44D79A0829ABFEA700EE9E15 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		44D79A0B29ABFEDF00EE9E15 /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		44D79A0E29ABFF1400EE9E15 /* ScaleButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleButtonStyle.swift; sourceTree = "<group>"; };
+		44D79A1129ABFF9400EE9E15 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		44EA751B29AC0C9A00C7F9A2 /* AppModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4495DF5929A7FD8F0092B737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B9E6C429B114BD00605407 /* Lottie in Frameworks */,
+				44D799EC29AA6A7E00EE9E15 /* Apollo in Frameworks */,
+				44A89FFF29ADF8700056A169 /* CachedAsyncImage in Frameworks */,
+				44EA751429AC017E00C7F9A2 /* ExpeditionEarthAPI in Frameworks */,
+				44EA751929AC0A2300C7F9A2 /* Swinject in Frameworks */,
+				44B9E6D129B11A9700605407 /* Refresher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4488C7EE29AE749700FA447A /* Mutation */ = {
+			isa = PBXGroup;
+			children = (
+				4488C7EF29AE74AE00FA447A /* deletePlanet.graphql */,
+			);
+			path = Mutation;
+			sourceTree = "<group>";
+		};
+		4495DF5329A7FD8F0092B737 = {
+			isa = PBXGroup;
+			children = (
+				44D799EE29AA6AD400EE9E15 /* schema */,
+				4495DF5E29A7FD8F0092B737 /* ExpeditionEarth */,
+				4430C83529B11FBC006D99BB /* ExpeditionEarth.app */,
+			);
+			sourceTree = "<group>";
+		};
+		4495DF5E29A7FD8F0092B737 /* ExpeditionEarth */ = {
+			isa = PBXGroup;
+			children = (
+				4495DF6D29A7FDC20092B737 /* Core */,
+				44EA751A29AC0BAA00C7F9A2 /* DI */,
+				4495DF6E29A7FDCE0092B737 /* Data */,
+				4495DF6F29A7FDDB0092B737 /* Domain */,
+				4495DF7029A7FDE10092B737 /* Presentation */,
+			);
+			path = ExpeditionEarth;
+			sourceTree = "<group>";
+		};
+		4495DF6D29A7FDC20092B737 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4495DF5F29A7FD8F0092B737 /* ExpeditionEarthApp.swift */,
+				44D79A0529ABE9DB00EE9E15 /* Extensions */,
+				44D79A0A29ABFEC800EE9E15 /* Helpers */,
+				44B9E6C829B1154E00605407 /* Animations */,
+				4495DF6329A7FD900092B737 /* Assets.xcassets */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		4495DF6E29A7FDCE0092B737 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				44D799F729ABCE6E00EE9E15 /* GraphQL */,
+				4495DF8329A7FEB20092B737 /* Repository */,
+				4495DF8629A7FEC00092B737 /* DataSource */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4495DF6F29A7FDDB0092B737 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4495DF7129A7FE230092B737 /* Model */,
+				4495DF7229A7FE260092B737 /* Repository */,
+				4495DF7329A7FE2E0092B737 /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4495DF7029A7FDE10092B737 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				44D79A1029ABFF8C00EE9E15 /* Intro */,
+				4495DF7B29A7FE7C0092B737 /* Journey */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		4495DF7129A7FE230092B737 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4495DF7429A7FE3E0092B737 /* Planet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4495DF7229A7FE260092B737 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				4495DF7629A7FE450092B737 /* PlanetRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		4495DF7329A7FE2E0092B737 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				4495DF7829A7FE4A0092B737 /* Planet */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		4495DF7829A7FE4A0092B737 /* Planet */ = {
+			isa = PBXGroup;
+			children = (
+				4495DF7929A7FE510092B737 /* GetPlanets.swift */,
+				4488C7F129AE75F800FA447A /* DeletePlanet.swift */,
+			);
+			path = Planet;
+			sourceTree = "<group>";
+		};
+		4495DF7B29A7FE7C0092B737 /* Journey */ = {
+			isa = PBXGroup;
+			children = (
+				4495DF7C29A7FE810092B737 /* JourneyDetail */,
+			);
+			path = Journey;
+			sourceTree = "<group>";
+		};
+		4495DF7C29A7FE810092B737 /* JourneyDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4495DF7D29A7FE8A0092B737 /* JourneyDetailViewModel.swift */,
+				4495DF7F29A7FE920092B737 /* JourneyDetailView.swift */,
+				44B9E6C029B10EB800605407 /* PlanetView.swift */,
+			);
+			path = JourneyDetail;
+			sourceTree = "<group>";
+		};
+		4495DF8329A7FEB20092B737 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				4495DF8429A7FEBC0092B737 /* PlanetRepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		4495DF8629A7FEC00092B737 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				4495DF8929A7FED50092B737 /* PlanetDataSource.swift */,
+				4495DF8829A7FECD0092B737 /* API */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		4495DF8829A7FECD0092B737 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4495DF8B29A7FEE00092B737 /* PlanetDataSourceImpl.swift */,
+				4495DF8D29A7FEE40092B737 /* Entity */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		4495DF8D29A7FEE40092B737 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4495DF8E29A7FEF20092B737 /* PlanetAPIEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		44A89FF429ADE1020056A169 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				44A89FF629ADE1190056A169 /* Mohave-Medium.ttf */,
+				44A89FF529ADE1190056A169 /* Mohave-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		44B9E6C529B114C600605407 /* Representables */ = {
+			isa = PBXGroup;
+			children = (
+				44B9E6C629B114D700605407 /* LottieView.swift */,
+			);
+			path = Representables;
+			sourceTree = "<group>";
+		};
+		44B9E6C829B1154E00605407 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				44B9E6CD29B1183700605407 /* loading-planets.json */,
+				44B9E6CB29B1157800605407 /* 404-planets.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		44D799F729ABCE6E00EE9E15 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				44D79A0229ABE35B00EE9E15 /* Core */,
+				44D799FB29ABCEC000EE9E15 /* Planet */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		44D799FB29ABCEC000EE9E15 /* Planet */ = {
+			isa = PBXGroup;
+			children = (
+				4488C7EE29AE749700FA447A /* Mutation */,
+				44D799FD29ABCECC00EE9E15 /* Fragments */,
+				44D799FC29ABCEC500EE9E15 /* Queries */,
+			);
+			path = Planet;
+			sourceTree = "<group>";
+		};
+		44D799FC29ABCEC500EE9E15 /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				44D79A0029ABCFA800EE9E15 /* allPlanets.graphql */,
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
+		44D799FD29ABCECC00EE9E15 /* Fragments */ = {
+			isa = PBXGroup;
+			children = (
+				44D799FE29ABCED800EE9E15 /* fragmentPlanet.graphql */,
+			);
+			path = Fragments;
+			sourceTree = "<group>";
+		};
+		44D79A0229ABE35B00EE9E15 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				44D79A0329ABE36300EE9E15 /* ApolloClient.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		44D79A0529ABE9DB00EE9E15 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				44D79A0629ABE9E700EE9E15 /* Sequence+Extension.swift */,
+				44D79A0829ABFEA700EE9E15 /* Color+Extension.swift */,
+				44D79A0B29ABFEDF00EE9E15 /* UINavigationController+Extension.swift */,
+				44A89FF929ADE3850056A169 /* Font+Extension.swift */,
+				44A89FFB29ADECF30056A169 /* View+Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		44D79A0A29ABFEC800EE9E15 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				44B9E6C529B114C600605407 /* Representables */,
+				44A89FF429ADE1020056A169 /* Fonts */,
+				44D79A0D29ABFEF600EE9E15 /* Styles */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		44D79A0D29ABFEF600EE9E15 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				44D79A0E29ABFF1400EE9E15 /* ScaleButtonStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		44D79A1029ABFF8C00EE9E15 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				44D79A1129ABFF9400EE9E15 /* IntroView.swift */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		44EA751A29AC0BAA00C7F9A2 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				44EA751B29AC0C9A00C7F9A2 /* AppModule.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4495DF5B29A7FD8F0092B737 /* ExpeditionEarth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4495DF6A29A7FD900092B737 /* Build configuration list for PBXNativeTarget "ExpeditionEarth" */;
+			buildPhases = (
+				4495DF5829A7FD8F0092B737 /* Sources */,
+				4495DF5929A7FD8F0092B737 /* Frameworks */,
+				4495DF5A29A7FD8F0092B737 /* Resources */,
+				44D799F229AA6B0700EE9E15 /* Apollo Generate Function */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExpeditionEarth;
+			packageProductDependencies = (
+				44D799EB29AA6A7E00EE9E15 /* Apollo */,
+				44EA751329AC017E00C7F9A2 /* ExpeditionEarthAPI */,
+				44EA751829AC0A2300C7F9A2 /* Swinject */,
+				44A89FFE29ADF8700056A169 /* CachedAsyncImage */,
+				44B9E6C329B114BD00605407 /* Lottie */,
+				44B9E6D029B11A9700605407 /* Refresher */,
+			);
+			productName = cleanswiftui;
+			productReference = 4430C83529B11FBC006D99BB /* ExpeditionEarth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4495DF5429A7FD8F0092B737 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					4495DF5B29A7FD8F0092B737 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 4495DF5729A7FD8F0092B737 /* Build configuration list for PBXProject "ExpeditionEarth" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4495DF5329A7FD8F0092B737;
+			packageReferences = (
+				44D799EA29AA6A7E00EE9E15 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				44EA751729AC0A2300C7F9A2 /* XCRemoteSwiftPackageReference "Swinject" */,
+				44A89FFD29ADF8700056A169 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+				44B9E6C229B114BD00605407 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				44B9E6CF29B11A9700605407 /* XCRemoteSwiftPackageReference "SwiftUI-Refresher" */,
+			);
+			productRefGroup = 4495DF5329A7FD8F0092B737;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4495DF5B29A7FD8F0092B737 /* ExpeditionEarth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4495DF5A29A7FD8F0092B737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D799FF29ABCED800EE9E15 /* fragmentPlanet.graphql in Resources */,
+				44D79A0129ABCFA800EE9E15 /* allPlanets.graphql in Resources */,
+				4488C7F029AE74AE00FA447A /* deletePlanet.graphql in Resources */,
+				4495DF6429A7FD900092B737 /* Assets.xcassets in Resources */,
+				44A89FF829ADE1190056A169 /* Mohave-Medium.ttf in Resources */,
+				44B9E6CC29B1157800605407 /* 404-planets.json in Resources */,
+				44A89FF729ADE1190056A169 /* Mohave-SemiBold.ttf in Resources */,
+				44B9E6CE29B1183700605407 /* loading-planets.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44D799F229AA6B0700EE9E15 /* Apollo Generate Function */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Apollo Generate Function";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "./apollo-ios-cli generate -f\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4495DF5829A7FD8F0092B737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B9E6C729B114D700605407 /* LottieView.swift in Sources */,
+				4495DF7A29A7FE510092B737 /* GetPlanets.swift in Sources */,
+				44D79A1229ABFF9400EE9E15 /* IntroView.swift in Sources */,
+				44A89FFC29ADECF30056A169 /* View+Extension.swift in Sources */,
+				4495DF8F29A7FEF20092B737 /* PlanetAPIEntity.swift in Sources */,
+				4495DF7729A7FE450092B737 /* PlanetRepository.swift in Sources */,
+				4495DF8529A7FEBC0092B737 /* PlanetRepositoryImpl.swift in Sources */,
+				44A89FFA29ADE3850056A169 /* Font+Extension.swift in Sources */,
+				44D79A0729ABE9E700EE9E15 /* Sequence+Extension.swift in Sources */,
+				4495DF7529A7FE3E0092B737 /* Planet.swift in Sources */,
+				44D79A0F29ABFF1400EE9E15 /* ScaleButtonStyle.swift in Sources */,
+				4495DF8029A7FE920092B737 /* JourneyDetailView.swift in Sources */,
+				44B9E6C129B10EB800605407 /* PlanetView.swift in Sources */,
+				4495DF8C29A7FEE00092B737 /* PlanetDataSourceImpl.swift in Sources */,
+				4488C7F229AE75F800FA447A /* DeletePlanet.swift in Sources */,
+				4495DF7E29A7FE8A0092B737 /* JourneyDetailViewModel.swift in Sources */,
+				44D79A0429ABE36300EE9E15 /* ApolloClient.swift in Sources */,
+				4495DF6029A7FD8F0092B737 /* ExpeditionEarthApp.swift in Sources */,
+				44D79A0C29ABFEDF00EE9E15 /* UINavigationController+Extension.swift in Sources */,
+				4495DF8A29A7FED50092B737 /* PlanetDataSource.swift in Sources */,
+				44D79A0929ABFEA700EE9E15 /* Color+Extension.swift in Sources */,
+				44EA751C29AC0C9A00C7F9A2 /* AppModule.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4495DF6829A7FD900092B737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4495DF6929A7FD900092B737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4495DF6B29A7FD900092B737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExpeditionEarth/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Expedition Earth";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.alkincakiralar.expeditionearth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4495DF6C29A7FD900092B737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExpeditionEarth/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Expedition Earth";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.alkincakiralar.expeditionearth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4495DF5729A7FD8F0092B737 /* Build configuration list for PBXProject "ExpeditionEarth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4495DF6829A7FD900092B737 /* Debug */,
+				4495DF6929A7FD900092B737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4495DF6A29A7FD900092B737 /* Build configuration list for PBXNativeTarget "ExpeditionEarth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4495DF6B29A7FD900092B737 /* Debug */,
+				4495DF6C29A7FD900092B737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		44A89FFD29ADF8700056A169 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		44B9E6C229B114BD00605407 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		44B9E6CF29B11A9700605407 /* XCRemoteSwiftPackageReference "SwiftUI-Refresher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gh123man/SwiftUI-Refresher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		44D799EA29AA6A7E00EE9E15 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		44EA751729AC0A2300C7F9A2 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		44A89FFE29ADF8700056A169 /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44A89FFD29ADF8700056A169 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+		44B9E6C329B114BD00605407 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44B9E6C229B114BD00605407 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		44B9E6D029B11A9700605407 /* Refresher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44B9E6CF29B11A9700605407 /* XCRemoteSwiftPackageReference "SwiftUI-Refresher" */;
+			productName = Refresher;
+		};
+		44D799EB29AA6A7E00EE9E15 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44D799EA29AA6A7E00EE9E15 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		44EA751329AC017E00C7F9A2 /* ExpeditionEarthAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ExpeditionEarthAPI;
+		};
+		44EA751829AC0A2300C7F9A2 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44EA751729AC0A2300C7F9A2 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4495DF5429A7FD8F0092B737 /* Project object */;
+}

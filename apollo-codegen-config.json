@@ -1,0 +1,40 @@
+{
+  "schemaName" : "ExpeditionEarthAPI",
+  "schemaDownloadConfiguration": {
+      "downloadMethod": {
+          "introspection": {
+              "endpointURL": "https://expeditionearth.herokuapp.com",
+              "httpMethod": {
+                  "POST": {}
+              },
+              "includeDeprecatedInputValues": false,
+              "outputFormat": "JSON"
+          }
+      },
+      "downloadTimeout": 60,
+      "headers": [],
+      "outputPath": "./GraphQL/schema.json"
+  },
+  "input" : {
+    "operationSearchPaths" : [
+      "**/*.graphql"
+    ],
+    "schemaSearchPaths" : [
+      "**/schema.json"
+    ]
+  },
+  "output": {
+      "schemaTypes": {
+          "moduleType": {
+              "swiftPackageManager": {}
+          },
+          "path": "./generated/schema/"
+      },
+      "operations": {
+          "inSchemaModule": {}
+      },
+      "testMocks": {
+          "none": {}
+      }
+  }
+}
