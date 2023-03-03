@@ -1,0 +1,3 @@
+mutation deletePlanet($id: String!) {
+    deletePlanet(id: $id)
+}

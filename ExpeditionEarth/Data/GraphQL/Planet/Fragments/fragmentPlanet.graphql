@@ -1,0 +1,9 @@
+fragment fragmentPlanet on Planet {
+    id
+    name
+    oxygen
+    distance
+    lightYears
+    mAh
+    image
+}
